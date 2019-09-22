@@ -1,0 +1,48 @@
+<app-hero></app-hero>
+<div class="section-inspiration">
+  <div class="section-header container">
+    <h3>Inspiration</h3>
+    <p>
+      The state of Utah in the United States is home to lots of beautiful
+      National Parks, & Bryce Canyon National Park ranks as three of the most
+      magnificent & awe inspiring.
+    </p>
+    <div class="grid-container section__card">
+      <div class="span-{{ item.span }}" *ngFor="let item of cardItems">
+        <app-card
+          [title]="item.title"
+          [label]="item.label"
+          [image]="item.image"
+          [playButton]="item.playButton"
+          [featured]="item.featured"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-newsletter">
+  <div class="section-header container">
+    <div class="section-wrapper">
+        <h3>Sign Up to Our Newsletter</h3>
+    </div>
+  </div>
+</div>
+<div class="section-clean">
+  <div class="section-header container">
+    <h3>Become A Travel Pro In One Easy Lesson</h3>
+    <div class="grid-container section__card">
+      <div *ngFor="let item of cardItems2">
+        <app-card
+          [title]="item.title"
+          [label]="item.label"
+          [image]="item.image"
+          [playButton]="item.playButton"
+          [featured]="item.featured"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section"></div>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

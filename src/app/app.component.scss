@@ -1,0 +1,75 @@
+.section-header {
+  margin-top: 130px;
+  text-align: center;
+
+  h3 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+
+  p {
+    width: 634px;
+    text-align: center;
+    line-height: 24px;
+    margin: 24px auto;
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+
+.section__card {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 500px);
+  grid-gap: 30px;
+  margin-top: 96px;
+  margin-bottom: 50px;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.section-clean .section-header {
+  text-align: left;
+
+  h3 {
+    width: 767px;
+  }
+
+  .section__card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px;
+  }
+}
+
+.section-newsletter {
+  .section-header {
+    height: 700px;
+    background: url('https://cdn.dribbble.com/users/27765/screenshots/4176445/artboard.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+
+    h3 {
+      width: 378px;
+      font-size: 64px;
+      text-transform: capitalize;
+    }
+  }
+
+  .section-wrapper {
+    padding: 336px 0 0 133px;
+  }
+}
+
+.section {
+  height: 550px;
+  background-color: #E3E3E3;
+}

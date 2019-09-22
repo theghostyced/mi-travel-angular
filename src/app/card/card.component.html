@@ -1,0 +1,13 @@
+<div
+  class="card"
+  [ngStyle]="{'background-image': 'url(' + image + ')'}"
+>
+  <div class="card-wrapper">
+    <div *ngIf="featured" class="card-badge">Featured</div>
+    <div *ngIf="playButton" class="play-button"></div>
+    <div class="card-content">
+      <p class="card-label">{{label}}</p>
+      <h3 class="card-title">{{title}}</h3>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+// Card
+// Card body
+// label
+// title
+// people images
+// badges
+// play-button
+
+.card {
+  position: relative;
+  border-radius: 8px;
+  height: 100%;
+  background-size: cover;
+  transform: scale(1);
+  transition: .3s all ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.32);
+    transform: scale(1.05);
+    z-index: 9999;
+  }
+
+  .card-content {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #fff;
+    text-align: left;
+
+    h3 {
+      font-size: 32px;
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 10px;
+      letter-spacing: 1.1px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .play-button {
+    background: url('../../assets/images/play-button-circle.svg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+  }
+
+  .card-badge {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #ff4643;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 10px;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.12);
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+  }
+}
